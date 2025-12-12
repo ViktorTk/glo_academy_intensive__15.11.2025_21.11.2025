@@ -1,7 +1,7 @@
 const getData = () => {
-  return fetch('https://jsonplaceholder.typicode.com/users').then((response) =>
-    response.json()
-  )
+  return fetch(
+    'https://dataset-ac473-default-rtdb.firebaseio.com/goods.json'
+  ).then((response) => response.json())
 }
 
 export default getData
